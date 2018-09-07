@@ -1,0 +1,223 @@
+body {
+  box-sizing: border-box;
+}
+.site-header {
+  background-color: $background-color;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-height: 0;
+  padding: 3rem 0 0 0;
+  font-weight: bold;
+  z-index: 100;
+}
+
+
+.page-heading {
+  font-family: 'Overpass';
+  font-size: 9vw;
+  //@include fluid-type(font-size, $minScreen, $maxScreen, 2rem, $maxFont);
+  margin-left: 10vw;
+  font-weight: 800;
+  text-align: right;
+  line-height: 1.2;
+  margin-top: calc(10vw * -0.2);
+  margin-bottom: 2.5vw;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+
+.post-content {
+ //font-family: 'Museo Slab';
+ //font-size: 1.5vw;
+ margin-top: 6rem;
+ font-family: 'Overpass Mono';
+ @include fluid-type(font-size, $minScreen, $maxScreen, 0.8rem, 25rem);
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ margin-left: -2rem;
+ margin-right: -2rem;
+
+ h1 {
+   font-family: 'Overpass Mono';
+   //font-size: 2vw;//font-weight: bold;
+   font-weight: bold
+ }
+}
+
+.chapter {
+  //background-color: white;
+  //padding: 2rem;
+  margin: 0 2rem;
+  //width: 50%;
+  flex-grow: 1;
+  //flex-basis: 0;
+  flex-basis: 45%;
+  //flex: 1 1 20px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  //justify-content: center;
+
+  &.focus {
+    position: relative;
+    z-index: 10;
+  }
+
+  .summary {
+    padding: 1.5rem;
+    position: relative;
+    z-index: 10;
+    background-color: $light-background-color;
+    //flex-basis: 40%;
+  }
+
+  &.client {
+    flex-basis: 100%;
+    margin-top: -10rem;
+    margin-bottom: -10rem;
+    font-size: 3vw;
+    background-color: transparent;
+    line-height: 1;
+
+    h1 {
+      height: 6rem;
+    }
+  }
+
+   &.api {
+    background-color: transparent;
+    font-size: 9vw;
+    line-height: 1;
+  }
+
+  .policy-chain,
+  .feature-chain {
+    //box-sizing: content-box;
+    //margin-bottom: 0;
+    //margin-right: -2rem;
+    //margin-left: 1rem;
+    //position: absolute;
+    //bottom: 0;
+    //right: 0;
+    //width: 100%;
+    border-left: 1rem solid transparent;
+    //border-top: 1rem solid $background-color;
+    background-color: transparent;
+    display: flex;
+		flex-direction: column;
+    height: 100%;
+    margin-left: 0;
+    //justify-content: center;
+  }
+
+  section {
+    //flex: 1 1;
+    //padding: 1.5rem;
+    position: relative;
+    flex-basis: 50%;
+
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+
+  .policy, .feature {
+    box-sizing: content-box;
+    background-color: $light-background-color;
+    border-bottom: 1rem solid $solid-background-color;
+    border-right: 0;
+    border-left: 0;
+    padding: 0 1.5rem;
+    //padding-left: 1rem;
+    //margin-left: 1rem;
+    text-align: left;
+    //border-left: 1rem solid $background-color;
+    //padding: 0.5rem;
+    list-style: none;
+    //width: calc(100% + 1rem);
+    //width: 100%;
+    //margin-left: -1rem;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    &:first-child {
+      border-top: 0;
+    }
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  .feature {
+    text-align: left;
+  }
+
+  #policy2,
+  #policy3,
+  #policy4 {
+    position: relative;
+    //z-index: 5;
+  }
+
+}
+
+
+
+.site-nav {
+  @include fluid-type(font-size, $minScreen, $maxScreen, $minFont, 30rem);
+  float: none;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.page-heading .active,
+.page-link.active {
+  color: $brand-color;
+}
+
+
+.chapter {
+  margin-bottom: 4rem;
+}
+
+.nav-list {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.nav-list-item {
+  display: inline-block;
+  border-left: 0.1rem solid $text-color;
+  padding-bottom: 2rem;
+}
+
+.page-link {
+  padding: 0 2rem 2rem 2rem;
+  position: relative;
+  top: -0.5rem;
+
+  &:hover {
+    color: $brand-color;
+  }
+}
+
+.nav-list-item:first-child {
+  border-left: 0;
+  margin-left: -2rem;
+}
+
+ul {
+  margin-left: 1.5rem;
+}
