@@ -52,9 +52,9 @@ permalink: /
   </section>
   <section class="functional">
     <ol class="feature-chain">
-      <li class="feature" id=""><a href="https://access.redhat.com/documentation/en-us/red_hat_3scale/{{ site.3scale_product_version }}/html/access_control/api-definition-methods-metrics">Methods and Metrics</a></li>
-      <li class="feature" id=""><a href="https://access.redhat.com/documentation/en-us/red_hat_3scale/{{ site.3scale_product_version }}/html/access_control/api-definition-methods-metrics#application-plans">Application Plans</a></li>
-      <li class="feature" id=""><a href="https://access.redhat.com/documentation/en-us/red_hat_3scale/{{ site.3scale_product_version }}/html/access_control/api-definition-methods-metrics#rate-limits">Rate limits</a></li>
+      <li class="feature" id=""><a href="{{ site.3scale_docs_url }}{{ site.3scale_product_version }}/html/access_control/api-definition-methods-metrics">Methods and Metrics</a></li>
+      <li class="feature" id=""><a href="{{ site.3scale_docs_url }}{{ site.3scale_product_version }}/html/access_control/api-definition-methods-metrics#application-plans">Application Plans</a></li>
+      <li class="feature" id=""><a href="{{ site.3scale_docs_url }}{{ site.3scale_product_version }}/html/access_control/api-definition-methods-metrics#rate-limits">Rate limits</a></li>
     </ol>
   </section>
 </article>
@@ -69,9 +69,9 @@ permalink: /
   </section>
   <section class="functional">
     <ol class="feature-chain">
-      <li class="feature" id=""><a href="https://access.redhat.com/documentation/en-us/red_hat_3scale/{{ site.3scale_product_version }}/html/analytics/out-of-the-box-analytics">Per-application</a></li>
-      <li class="feature" id=""><a href="https://access.redhat.com/documentation/en-us/red_hat_3scale/{{ site.3scale_product_version }}/html/analytics/response-codes-tracking">Response code tracking</a></li>
-      <li class="feature" id=""><a href="https://access.redhat.com/documentation/en-us/red_hat_3scale/{{ site.3scale_product_version }}/html/analytics/exporting-analytics">Export analytics</a></li>
+      <li class="feature" id=""><a href="{{ site.3scale_docs_url }}{{ site.3scale_product_version }}/html/analytics/out-of-the-box-analytics">Per-application</a></li>
+      <li class="feature" id=""><a href="{{ site.3scale_docs_url }}{{ site.3scale_product_version }}/html/analytics/response-codes-tracking">Response code tracking</a></li>
+      <li class="feature" id=""><a href="{{ site.3scale_docs_url }}{{ site.3scale_product_version }}/html/analytics/exporting-analytics">Export analytics</a></li>
     </ol>
   </section>
 </article>
@@ -86,9 +86,9 @@ permalink: /
   </section>
   <section class="functional">
     <ol class="feature-chain">  
-      <li class="feature" id=""><a href="https://access.redhat.com/documentation/en-us/red_hat_3scale/{{ site.3scale_product_version }}/html/billing/index#configure-billing">Pre-paid and Post-paid billing</a></li>
-      <li class="feature" id=""><a href="https://access.redhat.com/documentation/en-us/red_hat_3scale/{{ site.3scale_product_version }}/html/billing/index#adding-vat-rate">VAT rates</a></li>
-      <li class="feature" id=""><a href="https://access.redhat.com/documentation/en-us/red_hat_3scale/{{ site.3scale_product_version }}/html/billing/index#stripe">Stripe, Adyen, and Braintree support</a></li>
+      <li class="feature" id=""><a href="{{ site.3scale_docs_url }}{{ site.3scale_product_version }}/html/billing/index#configure-billing">Pre-paid and Post-paid billing</a></li>
+      <li class="feature" id=""><a href="{{ site.3scale_docs_url }}{{ site.3scale_product_version }}/html/billing/index#adding-vat-rate">VAT rates</a></li>
+      <li class="feature" id=""><a href="{{ site.3scale_docs_url }}{{ site.3scale_product_version }}/html/billing/index#stripe">Stripe, Adyen, and Braintree support</a></li>
     </ol>
   </section>
 </article>
