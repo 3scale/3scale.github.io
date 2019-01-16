@@ -15,9 +15,11 @@ order: 2
       <a href="https://github.com/3scale/apicast">3scale/apicast</a>
     </h1>
     <ul>
-      <li><a href="https://www.nginx.com/">NGINX</a> based API gateway</li>
-      <li><a href="https://www.lua.org/start.html">Lua</a> <a href="https://github.com/3scale/apicast/blob/master/doc/policies.md#policies">Policies</a> tell APIcast what to do in each of the nginx phases. You can <a href="https://www.lua.org/start.html">write your own</a>.</li>
-      <li>Ships with own <a href="https://github.com/3scale/apicast/blob/master/doc/dns-resolver.md#dns-resolver">DNS resolver</a> implemented in Lua</li>
+      <li><a href="https://www.nginx.com/">NGINX</a>-based API gateway</li>
+      <li><a href="https://www.lua.org/start.html">Lua</a> <a href="https://github.com/3scale/apicast/blob/master/doc/policies.md#policies">policies</a> 
+      tell APIcast what to do in each of the nginx phases. 
+      You can <a href="https://www.lua.org/start.html">write your own policies</a>.</li>
+      <li>Ships with its own <a href="https://github.com/3scale/apicast/blob/master/doc/dns-resolver.md#dns-resolver">DNS resolver</a> implemented in Lua</li>
     </ul>
   </section>
   <section class="functional">
@@ -39,7 +41,7 @@ order: 2
       <a href="https://github.com/3scale/apisonator">3scale/apisonator</a>
     </h1>
     <ul>
-      <li><a href="https://github.com/3scale/apisonator#apisonator-listener">Listener</a> accepts and enques requests to authorize and report</li>
+      <li><a href="https://github.com/3scale/apisonator#apisonator-listener">Listener</a> accepts and enqueues requests to authorize and report them.</li>
       <li><a href="https://github.com/3scale/apisonator#apisonator-worker">Worker</a> performs background tasks off-loaded from the listener.</li>
       <li><a href="https://github.com/3scale/apisonator#apisonator-failed-jobs-rescheduler">Rescheduler</a> re-queues failed jobs.</li>
 
@@ -66,7 +68,7 @@ order: 2
       <a href="https://github.com/3scale/porta">3scale/porta</a>
     </h1>
     <ul>
-      <li><a href="https://github.com/3scale/porta">Rails app</a> to manage API(s) & developers through GUI & API</li>
+      <li>Rails app to manage API(s) & developers through GUI & API</li>
       <li>Accounts, Applications, Messages, Plans, Billing, Limits, Rules, Policies.</li>
       <li>Create and nurture a <a href="https://github.com/3scale/porta/tree/master/lib/developer_portal">developer portal</a></li>
     </ul>

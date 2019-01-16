@@ -10,7 +10,7 @@ heading: <span id="nav_use" class="active">Use</span> now,<br /><span id="nav_in
   <section id="use" class="summary">
   <h1>Use Now</h1>
   <ul>
-    <li><a href="https://www.3scale.net/signup/">quick sign up</a> for the saas</li>
+    <li><a href="https://www.3scale.net/signup/">quick sign up</a> for SaaS</li>
     <li>free plan</li>
     <li>get a <em>feel for the product</em></li>
   </ul>
