@@ -11,7 +11,7 @@ order: 2
 <article id="apicast" class="chapter">  
   <section class="summary">
     <h1>
-      <i class="fas fa-archway"></i>
+      <i class="fab fa-github"></i>
       <a href="https://github.com/3scale/apicast">3scale/apicast</a>
     </h1>
     <ul>
@@ -35,7 +35,7 @@ order: 2
 <article id="apisonator" class="chapter">
   <section class="summary">
     <h1>
-      <i class="fas fa-fingerprint"></i>
+      <i class="fab fa-github"></i>
       <a href="https://github.com/3scale/apisonator">3scale/apisonator</a>
     </h1>
     <ul>
@@ -62,13 +62,13 @@ order: 2
 <article id="apicenter" class="chapter">
   <section class="summary">
     <h1>
-      <i class="fas fa-users-cog"></i>
-      <a href="https://github.com/3scale/system">3scale/apicenter</a>
+      <i class="fab fa-github"></i>
+      <a href="https://github.com/3scale/porta">3scale/porta</a>
     </h1>
     <ul>
-      <li><a href="https://github.com/3scale/system">Rails app</a> to manage API(s) & developers through GUI & API</li>
+      <li><a href="https://github.com/3scale/porta">Rails app</a> to manage API(s) & developers through GUI & API</li>
       <li>Accounts, Applications, Messages, Plans, Billing, Limits, Rules, Policies.</li>
-      <li>Create and nurture a <a href="https://github.com/3scale/system/tree/master/lib/developer_portal">developer portal</a></li>
+      <li>Create and nurture a <a href="https://github.com/3scale/porta/tree/master/lib/developer_portal">developer portal</a></li>
     </ul>
   </section>
   <section class="functional">

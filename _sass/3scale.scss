@@ -1,20 +1,18 @@
 @charset "utf-8";
 
 // Define defaults for each variable.
-
-$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$fa-font-path:        "../assets/fonts" !default;
+$base-font-family:  'Overpass', helvetica, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
-$spacing-unit:     3rem !default;
-
 $text-color:       #111 !default;
 $solid-background-color: rgba(#dadada, .95) !default;
 $background-color: rgba(#dadada, .95) !default;
 $light-background-color: rgba(white, 0.95);
-
+$appleGreen:     #32CD32;
 $brand-color:      #FF7314 !default;
 
 $grey-color:       #828282 !default;
@@ -50,7 +48,7 @@ $on-laptop:        800px !default;
 //$maxScreen: 20rem;
 $minScreen: 320px;
 $maxScreen: 4000px;
-$minFont: 1rem;
+$minFont: 0.8rem;
 $maxFont: 400rem;
 
 //  http://madebymike.com.au/writing/precise-control-responsive-typography/
@@ -79,10 +77,21 @@ $maxFont: 400rem;
 	@return $value / ($value * 0 + 1);
 }
 
+@function line-height-times($multiplier: 1, $subtract-border: false) {
+  $spacer: $base-line-height *1rem * $multiplier;
+
+  @if $subtract-border == true {
+    @return calc(#{$spacer} - #{$border-width});
+  }
+  @else {
+    @return $spacer;
+  }
+}
+
+$spacing-unit: line-height-times(2);
 // Import partials.
 @import
-  "minima/base",
-  "minima/layout",
-  "minima/syntax-highlighting",
-  "3scale/layout"
+  "3scale/base",
+  "3scale/layout",
+  "3scale/syntax-highlighting"
 ;

@@ -8,12 +8,11 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
-
-
 /**
  * Basic styling
  */
 body {
+  box-sizing: border-box;
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
   background-color: $background-color;
@@ -28,7 +27,23 @@ body {
   flex-direction: column;
 }
 
+/**
+ * Wrapper
+ */
+.wrapper {
+  //max-width: calc(#{$content-width} - (#{line-height-times(1)} * 2));
+  padding: line-height-times(1/2) line-height-times(2) 0 line-height-times(2);
 
+  margin-right: auto;
+  margin-left: auto;
+  //padding-right: line-height-times(1);
+  //padding-left: line-height-times(1);
+  @extend %clearfix;
+
+  @include media-query($on-laptop) {
+    padding: line-height-times(1/2) line-height-times(1) 0 line-height-times(1);
+  }
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -40,16 +55,12 @@ ul, ol, dl, figure,
   margin-bottom: $spacing-unit / 2;
 }
 
-
-
 /**
  * `main` element
  */
 main {
   display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
-
-
 
 /**
  * Images
@@ -58,8 +69,6 @@ img {
   max-width: 100%;
   vertical-align: middle;
 }
-
-
 
 /**
  * Figures
@@ -72,23 +81,35 @@ figcaption {
   font-size: $small-font-size;
 }
 
-
-
 /**
  * Lists
  */
 ul, ol {
-  margin-left: $spacing-unit;
+  margin-left: 0;// line-height-times(1);
+  //list-style: square outside;
+  list-style: none; /* Remove default bullets */
+}
+
+.page-content ul li::before {
+  content: "\25A0";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: $appleGreen; //$background-color; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  //display: inline-block; /* Needed to add space between the bullet and the text */
+  //width:  line-height-times(1.2); /* Also needed for space (tweak if needed) */
+  margin-left: line-height-times(-1.15); /* Also needed for space (tweak if needed) */
+  //@include relative-font-size(2.5);
+  @include fluid-type(font-size, $minScreen, $maxScreen, 1.5rem, 30rem);
+  position: absolute;
+  top: line-height-times(-0.35);
 }
 
 li {
+  position: relative;
   > ul,
   > ol {
     margin-bottom: 0;
   }
 }
-
-
 
 /**
  * Headings
@@ -97,14 +118,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
 }
 
-
-
 /**
  * Links
  */
 a {
   color: $text-color;
   text-decoration: underline;
+  transition: 0.3s;
 
   &:visited {
     color: $text-color;
@@ -147,48 +167,22 @@ blockquote {
 /**
  * Code formatting
  */
-pre,
-code {
-  @include relative-font-size(0.9375);
-  border: 1px solid $grey-color-light;
-  border-radius: 3px;
-  background-color: #eef;
-}
 
 code {
-  padding: 1px 5px;
+  //padding: 1px 5px;
 }
 
 pre {
-  padding: 8px 12px;
-  overflow-x: auto;
+  white-space: pre-wrap;
+  padding: line-height-times(1);
+  //overflow-x: auto;
+  //overflow: auto;
+  overflow-x:hidden;
 
   > code {
     border: 0;
     padding-right: 0;
     padding-left: 0;
-  }
-}
-
-
-
-/**
- * Wrapper
- */
-.wrapper {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
-  @extend %clearfix;
-
-  @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
   }
 }
 
