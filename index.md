@@ -14,12 +14,12 @@ permalink: /
       <i class="fas fa-sitemap"></i>
       Developer Portal
     </h1>
-    <p><span class="conditional-highlight">Share</span> your API's with the world, educate developers with interactive docs and empower them with a private area to manage their subscriptions, keys, and apps.</p>
+    <p><span class="conditional-highlight">Share</span> your API's with the world, educate developers with interactive docs and empower them with a private area to manage their subscriptions, keys and apps.</p>
   </section>
   <section class="functional focus">
     <ol class="feature-chain">
       <li class="feature" id=""><a href="{{ site.3scale_docs_url }}{{ site.3scale_product_version }}/html/developer_portal/authentication">flexible authentication</a></li>
-      <li class="feature" id=""><a href="{{ site.3scale_docs_url }}{{ site.3scale_product_version }}/html/developer_portal/change-built-in-pages">custom HTML, Js and CSS</a></li>
+      <li class="feature" id=""><a href="{{ site.3scale_docs_url }}{{ site.3scale_product_version }}/html/developer_portal/change-built-in-pages">custom HTML, JS and CSS</a></li>
       <li class="feature" id=""><a href="{{ site.3scale_docs_url }}{{ site.3scale_product_version }}/html/developer_portal/custom-signup-fields">custom sign-up form & email templates</a></li>
     </ol>
   </section>
