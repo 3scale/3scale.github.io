@@ -48,7 +48,7 @@ permalink: /
       <i class="fas fa-clipboard-list"></i>
       Plans, Rules & Limits
     </h1>
-    <p><span class="conditional-highlight">Control</span> access to your APIs with plans, metrics, methods, rate limits and pricing rules.</p>
+    <p><span class="conditional-highlight">Control</span> access to your APIs with plans, metrics, methods, and rate limits.</p>
   </section>
   <section class="functional">
     <ol class="feature-chain">
