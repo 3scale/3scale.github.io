@@ -8,7 +8,7 @@ heading: <a href="#share" id="nav_share">Share</a>, <a href="#secure" id="nav_se
 permalink: /
 ---
 
-<article id="share" class="chapter focus" >  
+<article id="share" class="chapter focus">  
   <section class="summary">
     <h1>
       <i class="fas fa-sitemap"></i>
