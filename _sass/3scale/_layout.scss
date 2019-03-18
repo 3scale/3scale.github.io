@@ -275,11 +275,10 @@ a:focus {
   color: $brand-color;
 }
 
-:target .conditional-highlight,
-:active .conditional-highlight{
-  color: $brand-color;
+//:active .conditional-highlight
+:target .conditional-highlight {
+  background-color: $brand-color;
   font-weight: bold;
-  font-family: 'Overpass';
 }
 
 .icon {
