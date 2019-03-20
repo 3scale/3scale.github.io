@@ -1,8 +1,7 @@
-let color_request = 'rgba(255, 115, 20, .8)'
-let color_response = 'rgba(0, 136, 206, .8)'
-let color_control = 'rgba(150, 150, 150, 0.5)'
-let color_admin_portal = 'rgba(192, 192, 192, 0.5)'
-let color_dev_portal = 'rgba(230, 230, 230, 0.5)'
+let color_request = 'rgba(255, 115, 20, 1)'
+let color_response = 'rgba(0, 136, 206, 1)'
+let color_control = 'rgba(255, 115, 20, 1)'
+let color_admin_portal = 'rgba(192, 192, 192, 1)'
 
 let caption_outline_color = '#dadada'
 
@@ -18,7 +17,7 @@ let client2policy_chain = new LeaderLine(
   {
     color: color_request,
     //startLabel: 'Request',
-    startLabel: LeaderLine.captionLabel('HTTP Request', {color: color_request, outlineColor: caption_outline_color, offset: [10, 0]}),
+    startLabel: LeaderLine.captionLabel('Start: HTTP Request', {color: color_request, outlineColor: caption_outline_color, offset: [10, 0]}),
     startPlug: 'disc',
     endPlug: 'arrow2',
     // dash: {animation: false},
@@ -189,7 +188,7 @@ let policy_chain2client = new LeaderLine(
     endPlug: 'arrow2',
     // dash: {animation: false},
     endLabel: 'Response',
-    endLabel: LeaderLine.captionLabel('HTTP Response', {color: color_response, outlineColor: caption_outline_color, offset: [10, 0]}),
+    endLabel: LeaderLine.captionLabel('End: HTTP Response', {color: color_response, outlineColor: caption_outline_color, offset: [10, 0]}),
     path: 'straight',
   }
 );
