@@ -16,8 +16,8 @@ order: 2
     </h1>
     <ul>
       <li><a href="https://www.nginx.com/">NGINX</a>-based API gateway</li>
-      <li><a href="https://www.lua.org/start.html">Lua</a> <a href="https://github.com/3scale/apicast/blob/master/doc/policies.md#policies">policies</a> 
-      tell APIcast what to do in each of the nginx phases. 
+      <li><a href="https://www.lua.org/start.html">Lua</a> <a href="https://github.com/3scale/apicast/blob/master/doc/policies.md#policies">policies</a>
+      tell APIcast what to do in each of the nginx phases.
       You can <a href="https://www.lua.org/start.html">write your own policies</a>.</li>
       <li>Ships with its own <a href="https://github.com/3scale/apicast/blob/master/doc/dns-resolver.md#dns-resolver">DNS resolver</a> implemented in Lua</li>
     </ul>
