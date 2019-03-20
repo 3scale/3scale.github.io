@@ -17,7 +17,7 @@ let client2policy_chain = new LeaderLine(
   {
     color: color_request,
     //startLabel: 'Request',
-    startLabel: LeaderLine.captionLabel('HTTP Request', {color: color_request, outlineColor: caption_outline_color, offset: [10, 0]}),
+    startLabel: LeaderLine.captionLabel('Start: HTTP Request', {color: color_request, outlineColor: caption_outline_color, offset: [10, 0]}),
     startPlug: 'disc',
     endPlug: 'arrow2',
     // dash: {animation: false},
@@ -188,7 +188,7 @@ let policy_chain2client = new LeaderLine(
     endPlug: 'arrow2',
     // dash: {animation: false},
     endLabel: 'Response',
-    endLabel: LeaderLine.captionLabel('HTTP Response', {color: color_response, outlineColor: caption_outline_color, offset: [10, 0]}),
+    endLabel: LeaderLine.captionLabel('End: HTTP Response', {color: color_response, outlineColor: caption_outline_color, offset: [10, 0]}),
     path: 'straight',
   }
 );
