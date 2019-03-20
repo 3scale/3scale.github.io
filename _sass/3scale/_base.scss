@@ -11,6 +11,11 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   box-sizing: border-box;
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
