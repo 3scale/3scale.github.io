@@ -1,8 +1,7 @@
-let color_request = 'rgba(255, 115, 20, .8)'
-let color_response = 'rgba(0, 136, 206, .8)'
-let color_control = 'rgba(150, 150, 150, 0.5)'
-let color_admin_portal = 'rgba(192, 192, 192, 0.5)'
-let color_dev_portal = 'rgba(230, 230, 230, 0.5)'
+let color_request = 'rgba(255, 115, 20, 1)'
+let color_response = 'rgba(0, 136, 206, 1)'
+let color_control = 'rgba(255, 115, 20, 1)'
+let color_admin_portal = 'rgba(192, 192, 192, 1)'
 
 let caption_outline_color = '#dadada'
 
