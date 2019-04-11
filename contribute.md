@@ -15,8 +15,9 @@ order: 3
     <ol class="policy-chain">
       <li class="feature" id=""><a href="https://issues.jboss.org/projects/THREESCALE">See all open issues in JIRA</a></li>
       <li class="feature" id=""><a href="https://github.com/3scale/porta/blob/master/CONTRIBUTING.md">Contribute to Porta</a></li>     
-      <li class="feature" id=""><a href="https://github.com/3scale/apicast/blob/master/doc/policies.md">write a custom policy for APIcast</a></li>
     </ol>
   </section>
 </article>
+
+{%- include apicast_custom_policies.html -%}
 <script src="{{ "/assets/contribute.js" | relative_url }}"></script>
